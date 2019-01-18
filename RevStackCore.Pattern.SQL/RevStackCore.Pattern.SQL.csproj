@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>RevStackCore.Pattern.SQL</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>S. Francis</Authors>
+    <Description>Extended C# Design Pattern class library for SQL</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>Net Standard 2.0 release</PackageReleaseNotes>
+    <Copyright>Copyright 2019</Copyright>
+    <PackageTags>RevStackCore Repository SQL</PackageTags>	
   </PropertyGroup>
 
   <ItemGroup>
