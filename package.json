@@ -1,0 +1,19 @@
+{
+  "name": "RevStackCore.Pattern.SQL",
+  "version": "1.0.0",
+  "description": "Extended C# Design Pattern class library for SQL",
+  "main": "RevStackCore.Pattern.SQL.sln",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RevStackCore/Pattern.SQL.git"
+  },
+  "author": "S. Francis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RevStackCore/Pattern.SQL/issues"
+  },
+  "homepage": "https://github.com/RevStackCore/Pattern.SQL"
+}
