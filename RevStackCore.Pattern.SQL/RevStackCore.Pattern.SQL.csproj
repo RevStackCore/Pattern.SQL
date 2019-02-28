@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>RevStackCore.Pattern.SQL</PackageId>
-    <PackageVersion>1.0.1</PackageVersion>
+    <PackageVersion>1.0.2</PackageVersion>
     <Authors>S. Francis</Authors>
     <Description>Extended C# Design Pattern class library for SQL</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -21,6 +21,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="RevStackCore.Pattern" Version="1.0.5" />
-    <PackageReference Include="Dapper" Version="1.50.5" />
+    <PackageReference Include="Dapper" Version="1.50.7" />
   </ItemGroup>
 </Project>
