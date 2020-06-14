@@ -1,6 +1,6 @@
 {
   "name": "RevStackCore.Pattern.SQL",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Extended C# Design Pattern class library for SQL",
   "main": "RevStackCore.Pattern.SQL.sln",
   "scripts": {
