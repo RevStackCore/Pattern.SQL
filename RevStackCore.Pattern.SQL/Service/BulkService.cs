@@ -5,7 +5,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace RevStackCore.Pattern.SQL.Service
+namespace RevStackCore.Pattern.SQL
 {
     public class BulkService<TEntity, TKey> : IBulkService<TEntity, TKey> where TEntity : class, IEntity<TKey>
     {
