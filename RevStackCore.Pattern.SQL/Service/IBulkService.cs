@@ -7,10 +7,12 @@ namespace RevStackCore.Pattern.SQL
 {
     public interface IBulkService<TEntity, TKey> : IService<TEntity, TKey> where TEntity : class, IEntity<TKey>
     {
-        void BulkInsert(IEnumerable<TEntity> entities);
-        void BulkUpdate(IEnumerable<TEntity> entities);
-        Task BulkInsertAsync(IEnumerable<TEntity> entities);
-        Task BulkUpdateAsync(IEnumerable<TEntity> entities);
+        int BulkInsert(IEnumerable<TEntity> entities);
+        int BulkUpdate(IEnumerable<TEntity> entities);
+        int BulkDelete();
+        Task<int> BulkInsertAsync(IEnumerable<TEntity> entities);
+        Task<int> BulkUpdateAsync(IEnumerable<TEntity> entities);
+        Task<int> BulkDeleteAsync();
         IDbConnection Db { get; }
     }
 }

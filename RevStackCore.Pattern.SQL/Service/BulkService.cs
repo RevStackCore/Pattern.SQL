@@ -25,26 +25,37 @@ namespace RevStackCore.Pattern.SQL.Service
             return Task.FromResult(Add(entity));
         }
 
-        public void BulkInsert(IEnumerable<TEntity> entities)
+        public int BulkInsert(IEnumerable<TEntity> entities)
         {
-            _repository.BulkInsert(entities);
+            return _repository.BulkInsert(entities);
         }
 
-        public Task BulkInsertAsync(IEnumerable<TEntity> entities)
+        public Task<int> BulkInsertAsync(IEnumerable<TEntity> entities)
         {
-            BulkInsert(entities);
-            return Task.CompletedTask;
+            var result=BulkInsert(entities);
+            return Task.FromResult(result);
         }
 
-        public void BulkUpdate(IEnumerable<TEntity> entities)
+        public int BulkUpdate(IEnumerable<TEntity> entities)
         {
-            _repository.BulkUpdate(entities);
+            return _repository.BulkUpdate(entities);
         }
 
-        public Task BulkUpdateAsync(IEnumerable<TEntity> entities)
+        public Task<int> BulkUpdateAsync(IEnumerable<TEntity> entities)
         {
-            BulkUpdate(entities);
-            return Task.CompletedTask;
+            var result=BulkUpdate(entities);
+            return Task.FromResult(result);
+        }
+
+        public int BulkDelete()
+        {
+            return _repository.BulkDelete();
+        }
+
+        public Task<int> BulkDeleteAsync()
+        {
+            var result = BulkDelete();
+            return Task.FromResult(result);
         }
 
         public void Delete(TEntity entity)

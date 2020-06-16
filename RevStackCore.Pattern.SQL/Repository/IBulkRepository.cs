@@ -6,8 +6,9 @@ namespace RevStackCore.Pattern.SQL
 {
     public interface IBulkRepository<TEntity, TKey> : IRepository<TEntity, TKey> where TEntity : class, IEntity<TKey>
     {
-        void BulkInsert(IEnumerable<TEntity> entities);
-        void BulkUpdate(IEnumerable<TEntity> entities);
+        int BulkInsert(IEnumerable<TEntity> entities);
+        int BulkUpdate(IEnumerable<TEntity> entities);
+        int BulkDelete();
         IDbConnection Db { get; }
     }
 }
